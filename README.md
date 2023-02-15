@@ -28,3 +28,11 @@ uniswap.get_price(token, block)
 from ypricemagic.compound import get_price
 get_price(compoundToken, block)
 ```
+
+To dev:
+```
+python3 -m venv env
+source env/bin/activate
+pip install -r requirements.txt -r requirements-dev.txt
+pytest tests/prices/test_yearn.py
+```
